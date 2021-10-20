@@ -5,11 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+
+
+    <style type = "text/css">
+    td {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .buttonInTable {
+        height: 100%;
+        width: 100%;
+        font-size: 100px;
+    }
+
+    body {
+        background-color: blanchedalmond;
+    }
+
+    b {
+        display: flex;
+        justify-content: center;
+    }
+
+    .startButton{
+        height:20px; 
+        width:200px; 
+        margin: -40px -100px; 
+        position:relative;
+        top:50%; 
+        left:50%;
+    }
+    </style>
+
+
 </head>
 <body>
     <b>Next Player:</b> <lable id='next-lbl'>  </lable>
     <br>
-    <table id='gameboard' border="1"> 
+    <table id='gameboard' border="1"  align ="center"> 
         <tr>
             <td id='c1'></td>
             <td id='c2'></td>
@@ -26,7 +60,7 @@
             <td id='c9'></td>
         </tr>
     </table>
-    <label id='game-over-lbl'></label>
+    <label id='game-over-lbl' align ="center"></label>
 
     <script src='scripts.js'></script>
 </body>
